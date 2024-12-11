@@ -1,0 +1,72 @@
+:root {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    border-left: 5px solid; /* Ancho del borde */
+    border-image: linear-gradient(to bottom, black 50%, #444 60%, white 90%) 1; /* Gradiente vertical */
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina relleno */
+    height: 100vh; /* Asegura que ocupe toda la altura del viewport */
+  }
+  
+  /* Estilos HEADER */
+  header {
+    background: linear-gradient(to right, black, white);
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  
+  h1 {
+    margin: 0; /* Elimina márgenes del título */
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 0 ;
+  }
+  
+  .div-usuario {
+    color: black;
+    margin-right: 0;
+    padding-left: auto /* Mueve el usuario hacia la derecha */
+  }
+
+  .container-fluid { 
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  
+  /* MAIN */
+  #cuotas {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to right, black, red, white);
+    padding-top: 10px;
+    margin: 0; /* Elimina el margen extra */
+  }
+  
+  #h3-cuotas {
+    margin: 0; /* Elimina márgenes del h3 */
+    padding: 0 1rem; /* Espaciado interno a la izquierda y derecha */
+    font-size: 1.2em;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: gold;
+    text-align: left;
+  }
+  
+  /* NAV */
+  nav.navbar {
+    margin: 0; /* Elimina márgenes del nav */
+    padding: 0 1rem; /* Espaciado interno */
+  }
+  
+
+  

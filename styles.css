@@ -14,6 +14,7 @@
   }
   
   /* Estilos HEADER */
+
   header {
     background: linear-gradient(to right, black, white);
     color: #fff;
@@ -44,6 +45,7 @@
   }
   
   /* MAIN */
+
   #cuotas {
     height: 50px;
     width: 100%;
@@ -61,12 +63,45 @@
     color: gold;
     text-align: left;
   }
+
+  @media (max-width: 768px) {
+    #h3-cuotas  {
+        display: none;
+        
+    }}
   
   /* NAV */
+
   nav.navbar {
     margin: 0; /* Elimina márgenes del nav */
     padding: 0 1rem; /* Espaciado interno */
   }
-  
 
+  .navbar-toggler { 
+                    color:#ffffff00 ;
+                    border: none } /* boton responsive */
+
+/* CARROUSEL */
+
+img {
+  height: 200px; /* Ajusta esta altura según tus necesidades */
+  object-fit:contain; /* Esto asegura que la imagen se recorte adecuadamente para llenar el espacio */
+  width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+}
+
+#img-1 {object-fit: fill;}
+
+#img-2 {
+  object-fit: fill
+}
+
+
+.img-re{ width: 100%;
+          object-fit: fill;}
+
+
+@media (max-width: 768px) {
+        img{
+              height: 100px;               
+            }}
   

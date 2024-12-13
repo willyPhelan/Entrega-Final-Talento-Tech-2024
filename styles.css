@@ -7,7 +7,7 @@
   
   body {
     border-left: 5px solid; /* Ancho del borde */
-    border-image: linear-gradient(to bottom, black 50%, #444 60%, white 90%) 1; /* Gradiente vertical */
+    border-image: linear-gradient(to bottom, black 64.4%, #444 60%, white 90%) 1; /* Gradiente vertical */
     margin: 0; /* Elimina márgenes externos */
     padding: 0; /* Elimina relleno */
     height: 100vh; /* Asegura que ocupe toda la altura del viewport */

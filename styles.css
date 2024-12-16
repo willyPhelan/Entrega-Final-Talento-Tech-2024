@@ -6,8 +6,6 @@
   }
   
   body {
-    border-left: 5px solid; /* Ancho del borde */
-    border-image: linear-gradient(to bottom, black 64.4%, #444 60%, white 90%) 1; /* Gradiente vertical */
     margin: 0; /* Elimina márgenes externos */
     padding: 0; /* Elimina relleno */
     height: 100vh; /* Asegura que ocupe toda la altura del viewport */
@@ -104,4 +102,25 @@ img {
         img{
               height: 100px;               
             }}
-  
+
+/* CARDS VIA API */ 
+
+          .card { height: 500px;}
+
+          .precio {
+            padding-left: 10px;
+            font-size: 20px;
+            color: green;
+          }
+          .btn-success {padding: 0px;
+                        border-radius: 0px;
+                        height: 30px;}
+          
+          .card-body { padding: 0px }
+
+          /* BOTONES PAGINADO */
+
+          .botones {  padding-top: 50px;
+                      cursor: pointer;}
+
+          

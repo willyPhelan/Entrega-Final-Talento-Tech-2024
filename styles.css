@@ -9,6 +9,10 @@
     margin: 0; /* Elimina márgenes externos */
     padding: 0; /* Elimina relleno */
     height: 100vh; /* Asegura que ocupe toda la altura del viewport */
+    background-image: url(./imgs/annie-spratt-zh7GEuORbUw-unsplash.jpg);
+     
+    
+    
   }
   
   /* Estilos HEADER */
@@ -73,7 +77,9 @@
   nav.navbar {
     margin: 0; /* Elimina márgenes del nav */
     padding: 0 1rem; /* Espaciado interno */
+  
   }
+   
 
   .navbar-toggler { 
                     color:#ffffff00 ;
@@ -123,4 +129,22 @@ img {
           .botones {  padding-top: 50px;
                       cursor: pointer;}
 
+       /* ESTILOS CONTACTO.HTML */
+
+       .card-c {height: 220px;
+                margin-left: 50px;
+                margin-top: 50px;
+                background-color: rgba(128, 128, 128, 0.171);}
+
+                @media (max-width: 768px) {
+                  .card-c{
+                        margin-left: 0px;               
+                      }}
+
+      .card-info {
+        height: 80px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.113);
+      }
+       
           

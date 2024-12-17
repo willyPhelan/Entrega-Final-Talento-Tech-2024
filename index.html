@@ -21,8 +21,10 @@
 <!--Desde aca se empieza a ver-->
 <body>
  
-<!--HEADER-->    
+<!--HEADER-->   
+    
     <header class="bg-dark text-white p-3">
+      <section id='inicio'>
         <div class="container-fluid d-flex justify-content-between align-items-left">
             <h1>Bienvenido a tu Tienda Digital!</h1>
             <div class="div-usuario d-flex align-items-center">
@@ -30,7 +32,9 @@
                 <span>Guillermo Phelan</span>
             </div>
         </div>
+      </section> 
     </header>
+  
 
 <!--MAIN-->
 
@@ -42,7 +46,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Inicio</a>
+        <a class="navbar-brand" href="#inicio">Inicio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,10 +54,10 @@
             <ul class="navbar-nav ms-auto">
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="#productos-sec">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                    <a class="nav-link" href="#sobrenosotros">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
@@ -100,7 +104,7 @@
 <!--PRODUCTOS CON CONTENDEOR VACIO PARA AGREGARLOS MEDIANTE MAIPULACION DEL DOM-->
 
     <main>
-        <section>
+        <section id="productos-sec">
          
           <div class="container my-5">
                   <div id="productos" class="row">
@@ -124,25 +128,28 @@
     <div id="cuotas">
     </div>
 
+    
+
     <!--FOOTER-->
 
     <footer class="bg-dark text-white text-center text-lg-start mt-5">
+      <section id='sobrenosotros'>
         <div class="container p-4">
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-4">
-              <h5 class="text-uppercase">Tu Tienda Digital S.A.</h5>
+              <h5 class="text-uppercase">Sobre Nosotros
+              </h5>
               <p>
-                 <span>Tu Tienda Digital</span> es la tienda digital lider en ventas de artículos importados. Nos especializamos en la venta en línea de productos traídos del extranjero, ofreciendo a los clientes acceso a marcas y mercancías que no están fácilmente disponibles en el mercado local. Estos productos suelen incluir gadgets electrónicos, moda, accesorios, artículos para el hogar, cosméticos y más.
+                 <span>Tu Tienda Digital</span> es la tienda online lider en ventas de artículos importados. Nos especializamos en la venta en línea de productos traídos del extranjero, ofreciendo a los clientes acceso a marcas y mercancías que no están fácilmente disponibles en el mercado local. Estos productos suelen incluir gadgets electrónicos, moda, accesorios, artículos para el hogar, cosméticos y más.
               </p>
             </div>
       
             <div class="col-lg-3 col-md-6 mb-4">
               <h5 class="text-uppercase">Enlaces</h5>
               <ul class="list-unstyled">
-                <li><a href="#!" class="text-white">Inicio</a></li>
-                <li><a href="#!" class="text-white">Sobre Nosotros</a></li>
-                <li><a href="#!" class="text-white">Servicios</a></li>
-                <li><a href="#!" class="text-white">Contacto</a></li>
+                <li><a href="#inicio" class="text-white">Inicio</a></li>
+                <li><a href="#sobrenosotros" class="text-white">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="text-white">Contacto</a></li>
               </ul>
             </div>
       
@@ -162,6 +169,7 @@
           © 2024 Copyright Guillermo Phelan: Todos los derechos reservados.
           <a class="text-white" href="https://inscripcionesagencia.bue.edu.ar/talentotech/">Talento Tech 2024</a>
         </div>
+      </section>
       </footer>
 
 

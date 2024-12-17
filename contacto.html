@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Tienda Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="styles.css" rel="stylesheet" >
+</head>
+<body>
+
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Tu Tienda Digital</h1>
+            <div class="d-flex align-items-center">
+                <i  style="color: black;" class="fas fa-user-circle fa-2x me-2"></i>
+                <span style="color: black;">Guillermo Phelan</span>
+            </div>
+        </div>
+    </header>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <p class="text-center" style="font-weight: bold;">En Tu Tienda Digital, nos comprometemos a brindar un servicio de excelencia, enfocado en satisfacer las necesidades de nuestros clientes. Nos destacamos por nuestra dedicación, profesionalismo y atención personalizada, asegurando siempre una experiencia confiable y de calidad. ¡Estamos aquí para ayudarte y superar tus expectativas!</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Envíanos un mensaje</h3>
+            <form action="https://formspree.io/f/xkgnlvjb" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                
+                <a href="index.html" class="btn btn-danger">Volver</a>
+
+            </form>
+        </div>
+
+        <div class="col-md-4 card card-c shadow">
+            <h3>Nuestra Ubicación</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Avenida Callao 2345, CABA</p>
+            <p><i class="fas fa-phone"></i> Teléfono: 088 472 1111</p>
+            <p><i class="fas fa-envelope"></i> Email: contacto@tutiendadigital.com.ar</p>
+            <h3>Seguinos en redes</h3>
+            <p>
+                <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i> Twitter</a> |
+                <a href="#" class="text-dark"><i class="fab fa-instagram"></i> Instagram</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <h3 class="text-center">Encontranos aquí</h3>
+    <br>
+    <div class="text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0766502987657!2d-58.38414572350252!3d-34.59886085695156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab733c5c3cf%3A0xf2e1a164b0e4f81!2sAvenida%20Santa%20Fe%20%26%20Avenida%20Callao!5e0!3m2!1ses-419!2sar!4v1728337000000!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center text-lg-start mt-5">
+    <section id="sobrenos">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="text-uppercase">Tu Tienda Digital S.A.</h5>
+          <p>
+             <span>Tu Tienda Digital</span> es la tienda online lider en ventas de artículos importados. Nos especializamos en la venta en línea de productos traídos del extranjero, ofreciendo a los clientes acceso a marcas y mercancías que no están fácilmente disponibles en el mercado local. Estos productos suelen incluir gadgets electrónicos, moda, accesorios, artículos para el hogar, cosméticos y más.
+          </p>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="#sobrenos" class="text-white">Sobre Nosotros</a></li>
+            <li><a href="#!" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#!" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#!" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#!" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright Guillermo Phelan: Todos los derechos reservados.
+      <a class="text-white" href="https://inscripcionesagencia.bue.edu.ar/talentotech/">Talento Tech 2024</a>
+    </div>
+</section>
+  </footer>

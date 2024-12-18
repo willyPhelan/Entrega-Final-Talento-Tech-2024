@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Tu Tienda Digital</h1>
+            <div class="d-flex align-items-center">
+                <i class="fas fa-user-circle fa-2x me-2"></i>
+                <span>Guillermo Phelan</span>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrito de compras -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Carrito de Compras</h2>
+
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-items">
+                <!-- Aquí se cargarán los productos del carrito -->
+            </tbody>
+        </table>
+
+        <div class="text-end mb-3">
+            <h4>Total: $<span id="total">0</span></h4>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
+            <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+        </div>
+    </div>
+
+
+
+
+<footer class="bg-dark text-white text-center text-lg-start mt-5">
+    <section id="sobre-nosotros">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="text-uppercase">Tu Tienda Digital S.A</h5>
+          <p>
+             <span>Tu Tienda Digital</span> es la tienda online lider en ventas de artículos importados. Nos especializamos en la venta en línea de productos traídos del extranjero, ofreciendo a los clientes acceso a marcas y mercancías que no están fácilmente disponibles en el mercado local. Estos productos suelen incluir gadgets electrónicos, moda, accesorios, artículos para el hogar, cosméticos y más.
+          </p>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="contacto.html" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Seguínos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#!" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#!" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#!" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright Guillermo Phelan
+      <a class="text-white" href="https://inscripcionesagencia.bue.edu.ar/talentotech/">Talento Tech 2024</a>
+    </div>
+  </section> 
+  </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/carrito.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

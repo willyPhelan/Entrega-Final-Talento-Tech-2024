@@ -27,16 +27,28 @@ document.addEventListener("DOMContentLoaded", () => {
         ? producto.description.substring(0, 100) + "..." 
         : producto.description;
 
+        const tituloCorto = producto.title.length > 50 
+        ? producto.title.substring(0, 50) + "..." 
+        : producto.title;
+
                   div.innerHTML = `
                       <div class="card mt-3 shadow">
                           <img src="${producto.image}" class="card-img-top" style="height: 250px; object-fit: contain; width: 100%;" alt="${producto.title}">
                           <div class="card-body d-flex flex-column">
-                              <h5 class="card-title">${producto.title}</h5>
+                              <h5 class="card-title">${tituloCorto}</h5>
                               <p class="card-text">${descripcionCorta}</p>
                               <p class="card-text precio fw-bold">Precio: $${producto.price}</p>
                               <button class="btn btn-success mt-auto">Agregar</button>
                           </div>
                       </div>`;
+
+                      //chekea desde aca
+          
+          // Evento agregar al carrito de card botón "Agregar"
+
+                      const botonAgregar = div.querySelector("button");
+                      botonAgregar.addEventListener("click", () => { 
+                      agregarAlCartito(producto); });
 
                   container.appendChild(div);
               });
@@ -44,7 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
               info.textContent = `Página ${paginaActual}`;
               atras.disabled = paginaActual === 1;
               siguiente.disabled = (paginaActual * cantidadElementos) >= totalProductos;
-          });
+          }).catch((error) => console.error("Error fetching products:", error));
+  }
+
+  function agregarAlCartito(producto) 
+  {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(producto);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${tituloCorto} ha sido agregado al carrito!`);
   }
 
   // Botón atrás
@@ -64,6 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 
-  // Llamada inicial
+  // rompe de aca abajo
+
+ 
+
+ 
+// Llamada inicial
   fetchProductos(paginaActual);
 });

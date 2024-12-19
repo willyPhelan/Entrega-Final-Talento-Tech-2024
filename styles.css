@@ -147,6 +147,33 @@ img {
 
           #page-info{ color: white;}
 
+          /* RESEÑAS */
+
+          #resenas {
+            padding: 2em;
+            background-color: #0a6548;
+        }
+
+        #resenas h2 {
+            color: #ffffff;
+            font-family: 'Oswald', sans-serif;   
+        }
+        
+        .resenas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+        }
+        
+        .reseña {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+
        /* ESTILOS CONTACTO.HTML */
 
        .card-c {height: 250px;

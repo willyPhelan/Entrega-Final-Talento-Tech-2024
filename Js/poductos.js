@@ -59,13 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
           }).catch((error) => console.error("Error fetching products:", error));
   }
 
-  function agregarAlCartito(producto) 
-  {
+  function agregarAlCartito(producto) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart.push(producto);
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert(`${tituloCorto} ha sido agregado al carrito!`);
-  }
+
+    // Mostrar el mensaje con alert
+    alert(`"${producto.title}" ha sido agregado al carrito!`);
+}
 
   // Botón atrás
   atras.addEventListener("click", () => {

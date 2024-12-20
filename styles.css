@@ -112,32 +112,74 @@ img {
 
 /* CARDS VIA API */ 
 
-          .card { 
-                  padding-top: 20px;
-                  height: 500px;
-                  border: black solid 0.5px;
-                  border-radius: 10px;}
+          /* Estilos existentes: Mantén estos intactos */
+.card { 
+  padding-top: 20px;
+  height: 500px;
+  border: black solid 0.5px;
+  border-radius: 10px;
+}
 
-          .card-title  { 
-          padding: 10px; 
-          
-          }
+.card-title { 
+  padding: 10px;
+}
 
-          .card-text { padding-left: 10px}
+.card-text {
+  padding-left: 10px;
+}
 
-          .precio {
-            padding-left: 10px;
-            font-size: 20px;
-            color: green;
-          }
-          .btn-success {
-                        border-radius: 0px 0px 10px 10px;
-                        height: 40px;
-                        width: 100%;
-                        padding-left: 0px;
-                      }
-          
-          .card-body { padding: 0px }
+.precio {
+  padding-left: 10px;
+  font-size: 20px;
+  color: green;
+}
+
+.btn-success {
+  border-radius: 0px 0px 10px 10px;
+  height: 40px;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.card-body {
+  padding: 0px;
+}
+
+/* Responsividad adicional */
+
+/* Ajuste para pantallas grandes (3 columnas) */
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 30%; /* Ajusta a tres columnas */
+    max-width: 30%;
+    margin: 10px auto;
+  }
+}
+
+/* Ajuste para pantallas medianas (2 columnas) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-4 {
+    width: 45%; /* Ajusta a dos columnas */
+    max-width: 45%;
+    margin: 10px auto;
+  }
+}
+
+/* Ajuste para pantallas pequeñas (1 columna) */
+@media (max-width: 767px) {
+  .col-md-4 {
+    width: 100%; /* Una tarjeta por fila */
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .card {
+    height: auto; /* Permitir altura dinámica */
+  }
+}
+
+
+       
 
           /* BOTONES PAGINADO */
 
@@ -172,8 +214,30 @@ img {
             padding: 1em;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        
 
+       /* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+  .resenas-grid {
+    grid-template-columns: repeat(3, 1fr); /* Tres reseñas por slide */
+  }
+  
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+  .resenas-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas por slide */
+  }
+  .resp { display: none}
+}
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 767px) {
+  .resenas-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos reseñas por slide */
+  }
+  .resp { display: none}
+}
        /* ESTILOS CONTACTO.HTML */
 
        .card-c {height: 250px;

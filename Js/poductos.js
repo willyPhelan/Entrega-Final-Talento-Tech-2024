@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Botón siguiente
   siguiente.addEventListener("click", () => {
-    console.log("Botón siguiente clickeado");
+    console.log("Botón siguiente clickeado");       
       if ((paginaActual * cantidadElementos) < totalProductos) {
           paginaActual++;
           fetchProductos(paginaActual);

@@ -85,6 +85,7 @@
                     color:#ffffff00 ;
                     border: none } /* boton responsive */
 
+                
 /* CARROUSEL */
 
 img {
@@ -109,6 +110,12 @@ img {
         img{
               height: 100px;               
             }}
+
+            @media (max-width: 768px) {
+              .carousel-item  {
+                  display: none;
+                  
+              }}
 
 /* CARDS VIA API */ 
 
@@ -156,12 +163,15 @@ img {
   }
 }
 
+
+
 /* Ajuste para pantallas medianas (2 columnas) */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-4 {
-    width: 45%; /* Ajusta a dos columnas */
-    max-width: 45%;
+    width: 60%; /* Ajusta a dos columnas */
+    max-width: 60%;
     margin: 10px auto;
+    padding: 10px;
   }
 }
 

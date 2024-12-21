@@ -1,281 +1,263 @@
 :root {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0; /* Elimina márgenes externos */
-    padding: 0; /* Elimina relleno */
-    height: 100vh; /* Asegura que ocupe toda la altura del viewport */
-    background-image: url(./imgs/fondo-navi.jpg);
-     
-    
-    
-  }
-  
-  /* Estilos HEADER */
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  header {
-    background: linear-gradient(to right, black, white);
-    color: #fff;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
-  }
-  
-  h1 {
-    margin: 0; /* Elimina márgenes del título */
-    font-size: 1.5rem;
-    text-align: left;
-    padding-left: 0 ;
-  }
-  
-  .div-usuario {
-    color: black;
-    margin-right: 0;
-    padding-left: auto /* Mueve el usuario hacia la derecha */
-  }
-
-  .container-fluid { 
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 0;
-    padding-right: 0;
-  }
-  
-  /* MAIN */
-
-  #cuotas {
-    height: 50px;
-    width: 100%;
-    background: linear-gradient(to right, black, red, white);
-    padding-top: 10px;
-    margin: 0; /* Elimina el margen extra */
-  }
-  
-  #h3-cuotas {
-    margin: 0; /* Elimina márgenes del h3 */
-    padding: 0 1rem; /* Espaciado interno a la izquierda y derecha */
-    font-size: 1.2em;
-    font-weight: bold; /* Peso de la fuente */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: gold;
-    text-align: left;
-  }
-
-  @media (max-width: 768px) {
-    #h3-cuotas  {
-        display: none;
-        
-    }}
-  
-  /* NAV */
-
-  nav.navbar {
-    margin: 0; /* Elimina márgenes del nav */
-    padding: 0 1rem; /* Espaciado interno */
-  
-  }
+body {
+  margin: 0; /* Elimina márgenes externos */
+  padding: 0; /* Elimina relleno */
+  height: 100vh; /* Asegura que ocupe toda la altura del viewport */
+  background-image: url(./imgs/fondo-navi.jpg);
    
+  
+  
+}
 
-  .navbar-toggler { 
-                    color:#ffffff00 ;
-                    border: none } /* boton responsive */
+/* Estilos HEADER */
 
-                
+header {
+  background: linear-gradient(to right, black, white);
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+h1 {
+  margin: 0; /* Elimina márgenes del título */
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 0 ;
+}
+
+.div-usuario {
+  color: black;
+  margin-right: 0;
+  padding-left: auto /* Mueve el usuario hacia la derecha */
+}
+
+.container-fluid { 
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* MAIN */
+
+#cuotas {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, black, red, white);
+  padding-top: 10px;
+  margin: 0; /* Elimina el margen extra */
+}
+
+#h3-cuotas {
+  margin: 0; /* Elimina márgenes del h3 */
+  padding: 0 1rem; /* Espaciado interno a la izquierda y derecha */
+  font-size: 1.2em;
+  font-weight: bold; /* Peso de la fuente */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: gold;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  #h3-cuotas  {
+      display: none;
+      
+  }}
+
+/* NAV */
+
+nav.navbar {
+  margin: 0; /* Elimina márgenes del nav */
+  padding: 0 1rem; /* Espaciado interno */
+
+}
+ 
+
+.navbar-toggler { 
+                  color:#ffffff00 ;
+                  border: none } /* boton responsive */
+
 /* CARROUSEL */
 
 img {
-  height: 200px; /* Ajusta esta altura según tus necesidades */
-  object-fit:contain; /* Esto asegura que la imagen se recorte adecuadamente para llenar el espacio */
-  width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+height: 200px; /* Ajusta esta altura según tus necesidades */
+object-fit:contain; /* Esto asegura que la imagen se recorte adecuadamente para llenar el espacio */
+width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
 }
 
 #img-1 {object-fit: fill;}
 
 #img-2 {
-  object-fit: cover;
-  width: 100%;
+object-fit: cover;
+width: 100%;
 }
 
 
 .img-re{ width: 100%;
-          object-fit:cover;}
+        object-fit:cover;}
 
 
-
-
-          @media (max-width: 768px) {
-            .item2 {
-              display: none !important;;
-            }
-          }
-                  
-              
+@media (max-width: 768px) {
+      img{
+            height: 100px;               
+          }}
 
 /* CARDS VIA API */ 
 
-          /* Estilos existentes: Mantén estos intactos */
-.card { 
-  padding-top: 20px;
-  height: 500px;
-  border: black solid 0.5px;
-  border-radius: 10px;
-}
+        .card { 
+                padding-top: 20px;
+                height: 500px;
+                border: black solid 0.5px;
+                border-radius: 10px;}
 
-.card-title { 
-  padding: 10px;
-}
-
-.card-text {
-  padding-left: 10px;
-}
-
-.precio {
-  padding-left: 10px;
-  font-size: 20px;
-  color: green;
-}
-
-.btn-success {
-  border-radius: 0px 0px 10px 10px;
-  height: 40px;
-  width: 100%;
-  padding-left: 0px;
-}
-
-.card-body {
-  padding: 0px;
-}
-
-/* Responsividad adicional */
-
-/* Ajuste para pantallas grandes (3 columnas) */
-@media (min-width: 992px) {
-  .col-md-4 {
-    width: 30%; /* Ajusta a tres columnas */
-    max-width: 30%;
-    margin: 10px auto;
-  }
-}
-
-
-
-/* Ajuste para pantallas medianas (2 columnas) */
-@media (min-width: 768px) and (max-width: 991px) {
-
-
-  .col-md-4 {
-    width: 50%; /* Ajusta a dos columnas */
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 20px;
-  }
-
-  .btn-success {
-    height: 30%;
-  }
-  
-}
-
-/* Ajuste para pantallas pequeñas (1 columna) */
-@media (max-width: 767px) {
-  .col-md-4 {
-    width: 100%; /* Una tarjeta por fila */
-    max-width: 100%;
-    margin: 10px auto;
-  }
-
-  .card {
-    height: auto; /* Permitir altura dinámica */
-  }
-}
-
-
-       
-
-          /* BOTONES PAGINADO */
-
-          .botones {  padding-top: 50px;
-                      cursor: pointer;}
-
-
-          #page-info{ color: white;}
-
-          /* RESEÑAS */
-
-          #resenas {
-            padding: 2em;
-            background-color: #0a6548;
+        .card-title  { 
+        padding: 10px; 
+        
         }
 
-        #resenas h2 {
-            color: #ffffff;
-            font-family: 'Oswald', sans-serif;   
+        .card-text { padding-left: 10px}
+
+        .precio {
+          padding-left: 10px;
+          font-size: 20px;
+          color: green;
+        }
+        .btn-success {
+                      border-radius: 0px 0px 10px 10px;
+                      height: 40px;
+                      width: 100%;
+                      padding-left: 0px;
+                    }
+        
+        .card-body { padding: 0px }
+
+        @media (min-width: 992px) {
+          .col-md-4 {
+            width: 30%; /* Ajusta a tres columnas */
+            max-width: 30%;
+            margin: 10px auto;
+          }
         }
         
-        .resenas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5em;
-        }
         
-        .reseña {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1em;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-       /* Ajustes para pantallas grandes */
-@media (min-width: 992px) {
-  .resenas-grid {
-    grid-template-columns: repeat(3, 1fr); /* Tres reseñas por slide */
-  }
-  
-}
-
-/* Ajustes para pantallas medianas */
-@media (min-width: 768px) and (max-width: 991px) {
-  .resenas-grid {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas por slide */
-  }
-  .resp { display: none}
-}
-
-/* Ajustes para pantallas pequeñas (celulares) */
-@media (max-width: 767px) {
-  .resenas-grid {
-    grid-template-columns: repeat(2, 1fr); /* Dos reseñas por slide */
-  }
-  .resp { display: none}
-}
-       /* ESTILOS CONTACTO.HTML */
-
-       .card-c {height: 250px;
-                margin-left: 50px;
-                margin-top: 50px;
-                background-color: rgba(128, 128, 128, 0.729);
-                color: black ;
-                padding-bottom: 10px;}
-                
-
-                @media (max-width: 768px) {
-                  .card-c{
-                        margin-left: 0px;               
-                      }}
-
-      .card-info {
-        height: 80px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.113);
-      }
-       
-      #body-c { 
-        color: white;
-      }
+        
+        /* Ajuste para pantallas medianas (2 columnas) */
+        @media (min-width: 768px) and (max-width: 991px) {
+        
+        
+          .col-md-4 {
+            width: 50%; /* Ajusta a dos columnas */
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 20px;
+          }
+        
           
+          
+        }
+        
+        /* Ajuste para pantallas pequeñas (1 columna) */
+        @media (max-width: 767px) {
+          .col-md-4 {
+            width: 100%; /* Una tarjeta por fila */
+            max-width: 100%;
+            margin: 10px auto;
+          }
+        
+          .card {
+            height: auto; /* Permitir altura dinámica */
+          }
+        }
+        
+
+        /* BOTONES PAGINADO */
+
+        .botones {  padding-top: 50px;
+                    cursor: pointer;}
+
+
+        #page-info{ color: white;}
+
+        /* RESEÑAS */
+
+        #resenas {
+          padding: 2em;
+          background-color: #0a6548;
+      }
+
+      #resenas h2 {
+          color: #ffffff;
+          font-family: 'Oswald', sans-serif;   
+      }
+      
+      .resenas-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 1.5em;
+      }
+      
+      .reseña {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 1em;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (min-width: 992px) {
+        .resenas-grid {
+          grid-template-columns: repeat(3, 1fr); /* Tres reseñas por slide */
+        }
+        
+      }
+      
+      /* Ajustes para pantallas medianas */
+      @media (min-width: 768px) and (max-width: 991px) {
+        .resenas-grid {
+          grid-template-columns: repeat(2, 1fr); /* Dos columnas por slide */
+        }
+        .resp { display: none}
+      }
+      
+      /* Ajustes para pantallas pequeñas (celulares) */
+      @media (max-width: 767px) {
+        .resenas-grid {
+          grid-template-columns: repeat(2, 1fr); /* Dos reseñas por slide */
+        }
+        .resp { display: none}
+      } 
+      
+
+     /* ESTILOS CONTACTO.HTML */
+
+     .card-c {height: 250px;
+              margin-left: 50px;
+              margin-top: 50px;
+              background-color: rgba(128, 128, 128, 0.729);
+              color: black ;
+              padding-bottom: 10px;}
+              
+
+              @media (max-width: 768px) {
+                .card-c{
+                      margin-left: 0px;               
+                    }}
+
+    .card-info {
+      height: 80px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.113);
+    }
+     
+    #body-c { 
+      color: white;
+    }
+        

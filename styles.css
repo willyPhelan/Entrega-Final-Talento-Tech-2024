@@ -106,16 +106,15 @@ img {
           object-fit:cover;}
 
 
-@media (max-width: 768px) {
-        img{
-              height: 100px;               
-            }}
 
-            @media (max-width: 768px) {
-              .carousel-item  {
-                  display: none;
+
+          @media (max-width: 768px) {
+            .item2 {
+              display: none !important;;
+            }
+          }
                   
-              }}
+              
 
 /* CARDS VIA API */ 
 
@@ -167,12 +166,19 @@ img {
 
 /* Ajuste para pantallas medianas (2 columnas) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+
   .col-md-4 {
-    width: 100%; /* Ajusta a dos columnas */
+    width: 50%; /* Ajusta a dos columnas */
     max-width: 100%;
     margin: 10px auto;
-    padding: 10px;
+    padding: 20px;
   }
+
+  .btn-success {
+    height: 30%;
+  }
+  
 }
 
 /* Ajuste para pantallas pequeñas (1 columna) */

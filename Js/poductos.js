@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : producto.title;
 
                   div.innerHTML = `
-                      <div class="card mt-3 shadow">
+                      <div class="card card1 mt-3 shadow">
                           <img src="${producto.image}" class="card-img-top" style="height: 250px; object-fit: contain; width: 100%;" alt="${producto.title}">
                           <div class="card-body d-flex flex-column">
                               <h5 class="card-title">${tituloCorto}</h5>
@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
                               <button class="btn btn-success mt-auto">Agregar</button>
                           </div>
                       </div>`;
+
+        
 
                       //chekea desde aca
           

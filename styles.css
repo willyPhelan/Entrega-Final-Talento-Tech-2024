@@ -168,8 +168,8 @@ img {
 /* Ajuste para pantallas medianas (2 columnas) */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-4 {
-    width: 60%; /* Ajusta a dos columnas */
-    max-width: 60%;
+    width: 100%; /* Ajusta a dos columnas */
+    max-width: 100%;
     margin: 10px auto;
     padding: 10px;
   }

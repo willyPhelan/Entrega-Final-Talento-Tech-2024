@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => 
+document.addEventListener("DOMContentLoaded", () => //
     {
     const carritoItemsStorage = JSON.parse(localStorage.getItem('cart')) || [];
     const carritoTableBody = document.getElementById('carrito-items');
